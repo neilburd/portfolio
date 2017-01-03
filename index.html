@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Neil Burdick Portfolio</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-new.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,600|Source+Sans+Pro:400,600,900" rel="stylesheet">
 </head>
 <body>
 
-  <head>
+  <header>
     <nav>
       <h2 class="name">Neil Burdick</h2>
       <ul>
@@ -20,46 +20,72 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-  </head>
+  </header>
 
   <main>
     <div id="about" class="about">
-      <h2>Welcome</h2>
-      <p>This is the portfolio site of Neil Burdick</p>
-      <p>A full stack web developer and graphic designer</p>
+        <h2 class="about-headline">About</h2>
+      <div class="description">
+        <h3>Welcome</h3>
+        <p>This is the portfolio site of <strong>Neil Burdick</strong></p>
+        <p>A full stack web developer and graphic designer</p>
+        <p>More to come...</p>
+        <p><a href="#">Link To...</a></p>
+      </div><!-- End Of description -->
     </div><!--END OF ABOUT-->
 
-    <div id="work">
-      <div class="work development">
-        <div class="description">
-          <h3>Development Project 1</h3>
-          <p>This project I recreated the classic Simon game.</p>
-          <p><a href="#">Learn More</a></p>
-            <ul class="whatWasUsed">
-              <li class="whatWasUsedItem">Html</li>
-              <li class="whatWasUsedItem">Css</li>
-              <li class="whatWasUsedItem">Javascript</li>
-              <li class="whatWasUsedItem">JQuery</li>
-            </ul>
-        </div>
-        <div class="image"></div>
-      </div><!--End Project 1 section -->
+    <div id="work" class="work">
+      <h2 class= "work-headline">Work</h2>
 
-      <div class="work design">
-        <div class="description">
-          <h3>Design Project 1</h3>
-          <p>This will be where I put design work that I actually care about</p>
-          <p><a href="#">Learn More</a></p>
-            <ul class="whatWasUsed">
-              <li class="whatWasUsedItem">Illustrator</li>
-              <li class="whatWasUsedItem">Photoshop</li>
-              <li class="whatWasUsedItem">InDesign</li>
-            </ul>
-        </div>
-        <div class="image"></div>
-      </div><!--End of Design Project 1 Section -->
+      <div class="project-section-wide">
+        <div class="project wide">
+          <div class="project-description">
+            <h4>Project Title </h4>
+            <p>This is a small description of the project. What happens when I add a bunch more text.</p>
+          </div><!-- End project Description -->
+          <img src="#" alt="#">
+        </div><!-- End Project Wide -->
 
-    </div><!--END OF WORK -->
+        <div class="project wide">
+          <div class="project-description">
+            <h4>Project Title </h4>
+            <p>This is a small description of the project</p>
+          </div><!-- End project Description -->
+          <img src="#" alt="#">
+        </div><!-- End Project Wide -->
+      </div><!-- End of Project section WIDE-->
+
+      <div class="project-section-square">
+        <div class="project square">
+          <div class="project-description">
+            <h4>Project Title 1</h4>
+            <p>This is a small description of the project</p>
+          </div><!-- End project Description -->
+          <img src="#" alt="#">
+        </div><!-- End Project Square -->
+
+        <div class="project square">
+          <div class="project-description">
+            <h4>Project Title 2 </h4>
+            <p>This is a small description of the project</p>
+          </div><!-- End project Description -->
+          <img src="#" alt="#">
+        </div><!-- End Project Square -->
+
+        <div class="project square">
+          <div class="project-description">
+            <h4>Project Title 3 </h4>
+            <p>This is a small description of the project</p>
+          </div><!-- End project Description -->
+          <img src="#" alt="#">
+        </div><!-- End Project Square -->
+
+
+      </div><!--End Project Section Square -->
+      </div><!-- End of Project section -->
+
+    </div> <!--End of Work headline -->
+
   </main>
 
   <footer>
@@ -67,6 +93,9 @@
 
     </div><!--END OF CONTACT-->
   </footer>
+  <div id="contact" class="contact">
+    <h2 class= "contact-headline">Contact</h2>
+  </div>
 <!-- the script tags -->
   <script src="script/jquery-3.1.1.js"></script>
   <script src="script/script.js"></script>

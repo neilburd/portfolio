@@ -1,28 +1,34 @@
 nav {
   background-color: rgba(100,200,100,1);
   display: flex;
+  height: 100px;
 }
 nav h2{
   padding: 0 0 0 20px;
   display: inline;
   flex: auto;
+  margin-top: 20px;
   /*background-color: red;*/
 }
 
 nav ul {
-  margin: 50px 0 0 0;
+  list-style-type: none;
+  margin: 30px 0 0 0;
   flex-flow: row;
 }
+
 nav ul li{
   list-style: none;
   float:left;
-  inline: block;
+  /*inline: block;*/
   padding: 0 30px 0 0;
   font-size: 1.75em;
   font-family: 'Open Sans', sans-serif;
   /*background-color: red;*/
 }
-
+nav ul li a{
+  text-decoration: none;
+}
 .name {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 900;
@@ -44,12 +50,14 @@ nav ul li{
 }
 
 /*this is the section for the WORK Items*/
-.work {
-  height:300px;
-  width: 300px;
-  background-color: #ff9800;
+.workSections{
   display: flex;
-  margin: 10px;
+}
+.work {
+  height:400px;
+  width: 50%;
+  background-color: #ff9800;
+  margin: 1px;
 }
 
 .development{
@@ -64,7 +72,7 @@ nav ul li{
 }
 .design .description{
   /*margin: 0 0 0 calc(50%);*/
-  text-align: right;
+  /*text-align: right;*/
 }
 .description{
   /*width: calc(50% - 50px);*/
@@ -75,28 +83,27 @@ nav ul li{
   font-size: 1.5em;
 }
 .whatWasUsed{
-  /*width: 100%;*/
-  background-color: red;
-  /*height: 20px;*/
-}
-.design .whatWasUsed {
-  margin: 0 0 0 calc(25%  );
+  width: 50%;
+  /*background-color: red;*/
+  height: 20px;
+  display: flex;
 }
 .whatWasUsedItem {
+  font-family: sans-serif;
   text-align: center;
   color: #aaa;
   font-size: .75em;
   min-width: 35px;
-  padding: 10px;
+  padding: 3px 5px 10px 5px;
   background-color: rgba(65, 70, 65, .75);
-  border-radius: 5px;
+  border-radius: 4px;
   border: 1px solid rgba(100,50,100,1);
-  margin: 10px;
+  margin: 0 0 0 8px;
   list-style: none;
-  display:inline-block;
-  float:left;
 }
-
-/*.design .whatWasUsed{
-  justify-content: flex-end;
-}*/
+.whatWasUsedItem:first-child{
+  margin-left: -40px;
+}
+.design .whatWasUsed{
+  /*letter-spacing: .05em;*/
+}
